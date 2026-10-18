@@ -1,0 +1,25 @@
+[project]
+name = "mcp-alfred"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "nickpanosrigas-gr", email = "nickpanosrigas@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "asyncssh>=2.24.1",
+    "httpx>=0.28.1",
+    "influxdb-client>=1.50.0",
+    "mcp[cli]>=2.3.0",
+    "pydantic>=2.14.1",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.3",
+]
+
+[project.scripts]
+mcp-alfred = "mcp_alfred:main"
+
+[build-system]
+requires = ["uv_build>=0.11.2,<0.12.0"]
+build-backend = "uv_build"
