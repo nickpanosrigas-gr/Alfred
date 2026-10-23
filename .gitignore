@@ -1,6 +1,7 @@
 # Environment & Secrets
 .env
 *.env.local
+topology.yaml
 
 # Python artifacts
 __pycache__/
